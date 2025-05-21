@@ -3,7 +3,7 @@ import { HeroSection } from '@/components/landing/hero';
 import { BenefitsSection } from '@/components/landing/benefits';
 import { PricingSection } from '@/components/landing/pricing';
 import { BusinessMarquee } from '@/components/landing/business-marquee';
-import { IntegrationsMarquee } from '@/components/landing/integrations-marquee';
+// import { IntegrationsMarquee } from '@/components/landing/integrations-marquee';
 
 export default function HomePage() {
   return (
@@ -12,7 +12,7 @@ export default function HomePage() {
       <BenefitsSection />
       <BusinessMarquee />
       <PricingSection />
-      <IntegrationsMarquee />
+      {/* <IntegrationsMarquee /> */}
     </div>
   );
 }

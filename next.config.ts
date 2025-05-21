@@ -1,7 +1,6 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -18,6 +17,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-};
+  output: 'standalone',
+  experimental: {},
+  serverRuntimeConfig: {
+    port: 9002
+  },
+  env: {
+    PORT: '9002'
+  },
+  productionBrowserSourceMaps: false,
+  compress: true
+} as NextConfig;
 
 export default nextConfig;
